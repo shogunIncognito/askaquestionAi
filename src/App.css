@@ -1,0 +1,36 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    width: 90vw;
+    margin: 20px 0;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+form {
+    text-align: center;
+}
+
+#prompt, #answer {
+    max-height: 500px;
+}
+
+@media (max-width: 500px) {
+    .content {
+        flex-direction: column;
+        width: 90vw;
+    }
+}
